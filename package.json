@@ -1,7 +1,7 @@
 {
   "name": "mysql-hero",
   "description":"Eventually, this will be something.  Not likely useful to anyone else until v0.2.0.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "email":"",
   "auth":"",
   "private": false,

@@ -53,7 +53,9 @@ exports = module.exports = (config)->
     
     # !Modifications to 'req' object - adding module-related object
     req.mysqlHero =
-      reconnect: 
+      reconnect: (options)->
+        connection.end()
+        connection.connect(options)
     
       # Map basic methods
       connect: connection.connect
