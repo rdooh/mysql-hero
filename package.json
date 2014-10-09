@@ -1,11 +1,12 @@
 {
   "name": "mysql-hero",
   "description":"Eventually, this will be something.  Not likely useful to anyone else until v0.2.0.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "email":"",
   "auth":"",
   "private": false,
   "dependencies": {
+    "mysql": "~2.5.1"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
