@@ -32,15 +32,7 @@ exports = module.exports = function(config) {
     if (config.flag) {
       console.log("Has config.flag");
     }
-    req.mysqlHero = {
-      reconnect: function(options) {
-        connection.end();
-        return connection.connect(options);
-      },
-      connect: connection.connect,
-      query: connection.query,
-      end: connection.end
-    };
+    req.mysqlHero = connection;
     next();
   };
 };

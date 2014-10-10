@@ -52,17 +52,7 @@ exports = module.exports = (config)->
     console.log "Has config.flag" if config.flag
     
     # !Modifications to 'req' object - adding module-related object
-    req.mysqlHero =
-      reconnect: (options)->
-        connection.end()
-        connection.connect(options)
-    
-      # Map basic methods
-      connect: connection.connect
-      query: connection.query
-      end: connection.end
-      
-      # Add convenience methods
+    req.mysqlHero = connection
       
       
 
